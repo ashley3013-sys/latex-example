@@ -3,11 +3,61 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaTeX examples</title>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    <title>LaTeX fraction examples</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
       window.MathJax = {
         tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
       };
     </script>
+    <style>
+      body {
+        font-family: "Georgia", serif;
+        background-color: #f8f8f8;
+        color: #111111;
+        text-align: justify;
+        line-height: 1.6;
+        padding: 2em;
+      }
+      .MathJax {
+        font-family: "Georgia", serif;
+      }
+      code {
+        font-family: "Courier New", monospace;
+        background-color: #f4f4f4;
+        padding: 2px 4px;
+        border-radius: 3px;
+      }
+      pre code {
+        display: block;
+        padding: 10px;
+        margin: 1em 0;
+        background-color: #e8e8e8;
+        border-radius: 5px;
+        overflow-x: auto;
+      }
+      h2 {
+        margin-top: 2em;
+      }
+    </style>
   </head>
+  <body>
+    <h1>LaTeX fraction examples</h1>
+    <p>inline fractions:</p>
+    <h2>$\frac{1}{2}$</h2>
+    <p>how to write it in code:</p>
+    <code>\frac{1}{2}</code>
+    <h2>$\frac{1}{4}$</h2>
+    <p>how to write it in code:</p>
+    <code>\frac{1}{4}</code>
+    <h2>$\frac{2}{5}$</h2>
+    <p>how to wrte it in code:</p>
+    <code>\frac{2}{5}</code>
+    <h2>display fractions</h2>
+    <p>centered on its own line:</p>
+    <h2>
+      $$
+      \frac{1}{2} + \frac{2}{5} = 
+    </h2>
+  </body>
 </html>
